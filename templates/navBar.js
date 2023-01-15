@@ -20,6 +20,11 @@ template.innerHTML = `
                 <br>
                 <br>
                 <a href="contact.html">Contact Me</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="404.html">404 page</a>
             </innerFrameText>
         </sideFrame>
     </body>
