@@ -49,5 +49,5 @@ li {
   
   /* selected link */
   a:active {
-    color: blue;
+    color: black;
   } 
