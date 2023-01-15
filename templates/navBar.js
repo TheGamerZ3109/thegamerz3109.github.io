@@ -9,7 +9,7 @@ template.innerHTML = `
             <br>
             <br>
             <innerFrameText>
-                <a href="index.html">Home</a>
+                <a href="home.html">Home</a>
                 <br>
                 <br>
                 <br>
