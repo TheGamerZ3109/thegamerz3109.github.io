@@ -6,6 +6,8 @@ template.innerHTML = `
     </head>
 
     <body>
+        <link rel="stylesheet" href="style.css">
+
         <sideFrame>
             <innerFrameTextH>
                 Pages:
