@@ -47,11 +47,6 @@ li {
     color: white;
   }
   
-  /* mouse over link */
-  a:hover {
-    color: white;
-  }
-  
   /* selected link */
   a:active {
     color: blue;
