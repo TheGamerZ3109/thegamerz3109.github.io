@@ -37,17 +37,25 @@ li {
     font-size: x-large;
 }
 
- /* unvisited link */
- a:link {
+/* unvisited link */
+a:link {
     color: white;
-  }
-  
-  /* visited link */
-  a:visited {
+}
+
+/* visited link */
+a:visited {
     color: white;
-  }
-  
-  /* selected link */
-  a:active {
+}
+
+/* selected link */
+a:active {
     color: black;
-  } 
+}
+
+homePageH1 {
+    color: black;
+    font-size: xx-large;
+    position: absolute;
+    text-align: left;
+    left: 125;
+}
