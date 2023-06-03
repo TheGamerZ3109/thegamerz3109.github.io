@@ -1,5 +1,26 @@
 name {
     color:black;
+    font-family:'Lucida Sans Unicode';
     font-size: 100px;
-    text-align:right;
+    float:right;
+}
+overview {
+    color:black;
+    font-family:'Lucida Sans Unicode';
+    font-size: 85px;
+    float:left;
+}
+paragraph {
+    color:black;
+    font-family:'Lucida Sans Unicode';
+    font-size: 25px;
+    float:left;
+    display: flex;
+}
+subName {
+    color:black;
+    font-family:'Lucida Sans Unicode';
+    font-size: 30px;
+    float:left;
+    display: flex;
 }
