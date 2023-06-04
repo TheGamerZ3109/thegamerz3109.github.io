@@ -1,3 +1,19 @@
+ul {
+    margin: 0;
+}
+ul.dashed {
+    list-style-type: none;
+}
+ul.dashed > li {
+    text-indent: -5px;
+}
+ul.dashed > li:before {
+    content: "- ";
+    text-indent: -5px;
+}
+body {
+    background-color: gray;
+}
 name {
     color:black;
     font-family:'Lucida Sans Unicode';
@@ -14,6 +30,13 @@ paragraph {
     color:black;
     font-family:'Lucida Sans Unicode';
     font-size: 25px;
+    float:left;
+    display: flex;
+}
+paragraph_smaller {
+    color:black;
+    font-family:'Lucida Sans Unicode';
+    font-size: 23px;
     float:left;
     display: flex;
 }
