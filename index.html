@@ -6,70 +6,38 @@
     </head>
 
     <body>
-        <paragraph_smaller style="float:left; font-size: 45px;">
-            <i style="float:inline-start"> html/css does not reflect my lua ability <b>this website sucks</b> lmao</i>
-        </paragraph_smaller>
+        <div id="loginContainer">
+            <!-- Textboxes will be added here -->
+        </div>
 
-        <name>
-            mr.z #3109
-            <br>
-            <subName>
-                previously_known_as: <br> {"TheBaconHero_101", "TheGamerZ3109"}
-            </subName>
-        </name>
+        <script>
+            console.log("loading")
 
-        <br style="margin-bottom:21em">
+            let correctLogin = {email:"fakeemail@gmail.com", password:"passw0rd"}
 
-        <overview>
-            experience
-            <br>
+            var emailbox = document.createElement("input");
+            emailbox.id = "email_box"
+            emailbox.type = "text"
+            emailbox.placeholder = "Input your EMail."
 
-            <paragraph>
-                i've been activly programming for around three years now, it's become a very large hobby of mine and I hope to continue growing it
-                <br>
-                you can find my specific/general work examples below with a little scrolling!
-                <br>
-                ps: I will *not* be doing anything against ROBLOX ToS, this includes but is not limited to, gambling, nsfw, and exploits
-            </paragraph>
-        </overview>
+            var passbox = document.createElement("input");
+            passbox.id = "password_box"
+            passbox.type = "text"
+            passbox.placeholder = "Input your Password."
 
-        <overview>
-            payment
+            var submitbtn = document.createElement("button")
+            submitbtn.textContent = "Submit"
+            submitbtn.onclick = function() {
+                if (emailbox.value == correctLogin.email && passbox.value == correctLogin.password){
+                    console.log("success!")
+                } else {
+                    console.log("wrong!")
+                }
+            }
 
-            <br>
-
-            <paragraph>
-                payment types: Robux
-                <br>
-                The lowest I will work for is 3.5k robux, I repeat, I will NOT work for lower. And YOU, I repeat YOU, will be paying any tax roblox implies. (it's been an issue in the past.)
-                <br>
-                "why not USD?" -- dont have paypal or anything like that setup *at this moment*, I intend to in the future
-                <br>
-                there is no exact listed amount per jobs, it can vary depending on how cooperative you are, how hard I have to work, and how long I have to work
-            </paragraph>
-        </overview>
-
-        <overview>
-            previous work experience
-            <br>
-            <paragraph>
-                these can all branch out to their own things, for example, my fps game *also* have mini maps and spawn systems and anti-cheat
-                <br>
-                along with so much more, so remember, I do pretty much anything!
-                <ul class="dashed">
-                    <i>and in no specific order <br> media is not listed, if you would like a video / photo of something I can try and find it and show you! <br> I can do much more than this, just some examples! </i>
-                    <br>
-                    <li>Active Anti-Cheats</li>
-                    <li>Grid-Style Inventories ("matrix" inventories)</li>
-                    <li>Several semi-realistic fps mil-sim games + many general fps games</li>
-                    <li>My own projectile system</li>
-                    <li>"Build your own" type tycoons, can be unique from other players with different builds</li>
-                    <li>Movement systems(crouching,sprinting,etc)</li>
-                    <li>Weapon attachment editor (to go with several fps games)</li>
-                    <li>Open World Exploration RPG</li>
-                    <li>Melee Combat (Melee Weapons & Hand-to-Hand)</li>
-                </ul>
-            </paragraph>
-        </overview>
+            document.getElementById("loginContainer").appendChild(emailbox);
+            document.getElementById("loginContainer").appendChild(passbox);
+            document.getElementById("loginContainer").appendChild(submitbtn);
+        </script>
     </body>
 </html>
