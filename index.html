@@ -10,11 +10,13 @@
             <!-- Textboxes will be added here -->
         </div>
 
-        <p>
+        <p id="desc">
             Mr Fake is a very wealthy business man with the most secure practices on the market.
 
             Please contact him at fakeemail@gmail.com
         </p>
+
+        <winner_text id="winner_text"></winner_text>
 
         <script>
             console.log("loading")
@@ -35,17 +37,17 @@
             passbox.placeholder = "Input your Password."
 
             var submitbtn = document.createElement("button")
+            submitbtn.id = "submit_btn"
             submitbtn.textContent = "Submit"
             submitbtn.onclick = function() {
                 if (emailbox.value == correctLogin.email && passbox.value == correctLogin.password){
                     console.log("success!")
 
                     document.getElementById("loginContainer").remove()
-
-                    var text = document.createElement("p")
-                    text.innerText = "Good job! You've cracked my password"
+                    document.getElementById("desc").remove()
+                    document.getElementById("winner_text").innerHTML = "Congratulations you've cracked the password!"
                 } else {
-                    console.log("wrong!")
+                    console.log("wrong")
                 }
             }
 
