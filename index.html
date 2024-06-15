@@ -30,7 +30,8 @@
             submitbtn.onclick = function() {
                 if (emailbox.value == correctLogin.email && passbox.value == correctLogin.password){
                     console.log("success!")
-                    submitbtn.blur()
+
+                    document.getElementById("loginContainer").remove()
                 } else {
                     console.log("wrong!")
                 }
