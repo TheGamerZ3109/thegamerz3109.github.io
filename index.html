@@ -10,6 +10,12 @@
             <!-- Textboxes will be added here -->
         </div>
 
+        <p>
+            Mr Fake is a very wealthy business man with the most secure practices on the market.
+
+            Please contact him at fakeemail@gmail.com
+        </p>
+
         <script>
             console.log("loading")
 
@@ -32,6 +38,9 @@
                     console.log("success!")
 
                     document.getElementById("loginContainer").remove()
+
+                    var text = document.createElement("p")
+                    text.innerText = "Good job! You've cracked my password"
                 } else {
                     console.log("wrong!")
                 }
